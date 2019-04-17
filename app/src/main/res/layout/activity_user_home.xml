@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/gotoProfileBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="26dp"
+                android:text="Profile"
+                android:drawableLeft="@drawable/ic_account_box_black_24dp"
+                android:onClick="onProfileButtonClick"/>
+            <Button
+                android:id="@+id/gotoAccSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Setting"
+                android:textSize="26dp"
+                android:drawableLeft="@drawable/ic_build_black_24dp"
+                android:onClick="onAccStButtonClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/gotoSearchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Search"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:textSize="26dp"
+            android:onClick="onSearchButtonClick"/>
+        <Button
+            android:id="@+id/gotoPostBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Blood Bank"
+            android:textSize="26dp"
+            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+            android:onClick="onBloodBankButtonClick"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/gotoBeDonorBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Become donor"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:textSize="26dp"
+                android:onClick="onBeDonorButtonClick"/>
+
+
+            <Button
+                android:id="@+id/gotoexitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="exit"
+                android:textSize="26dp"
+                android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                android:layout_toRightOf="@+id/gotoBeDonorBtn"
+                android:onClick="onExitButtonClick"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

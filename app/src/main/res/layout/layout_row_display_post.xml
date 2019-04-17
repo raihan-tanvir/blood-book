@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#deb2b2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding2x"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/postMakerEt"
+            android:layout_width="@dimen/ETSizeHorizontal"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/icon_text"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/paddingHalf"
+            android:textColor="#000000"
+            android:textSize="@dimen/ETFont"
+            android:layout_marginBottom="@dimen/margin"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/reqBgTV"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_shield"
+                android:drawablePadding="@dimen/paddingHalf"
+                android:padding="@dimen/paddingHalf"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ETFont"
+                android:textAlignment="center"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginRight="@dimen/margin2x"/>
+
+            <TextView
+                android:id="@+id/bgAddressTV"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_address"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:textColor="#000000"
+                android:textSize="@dimen/ETFont"
+                android:layout_marginBottom="@dimen/margin"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/bgPhoneTV"
+            android:layout_width="@dimen/ETSizeHorizontal"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/icon_phone"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/paddingHalf"
+            android:textColor="#000000"
+            android:textSize="@dimen/ETFont"
+            android:layout_marginBottom="@dimen/margin"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

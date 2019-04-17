@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff0000</color>
+    <color name="colorPrimaryDark">#a90404</color>
+    <color name="colorAccent">#f5615c</color>
+    <color name="colorAppBg">#e2afaf</color>
+    <color name="green">#94fd01</color>
+    <color name="blue">#0154ef</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+
+    <color name="bgWhite">#fff</color>
+    <color name="bgBlack">#030303</color>
+    <color name="bgRed">#ff0000</color>
+
+
+    <color name="colorPurple_A400">#D500F9</color>
+    <color name="colorPurple_900">#4A148C</color>
+
+    <color name="colorAmber_A400">#FFC400</color>
+    <color name="colorAmber_900">#FF6F00</color>
+
+    <color name="colorGreen_A400">#00E676</color>
+    <color name="colorGreen_900">#1B5E20</color>
+
+    <color name="colorRed_start">#f72049</color>
+    <color name="colorRed_center">#d61c1c</color>
+    <color name="colorRed_end">#931818</color>
+
+</resources>

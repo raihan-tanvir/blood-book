@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E2DBDB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding2x"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bbNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/icon_text"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/paddingHalf"
+            android:textColor="#000000"
+            android:textSize="@dimen/ETFont"
+            android:layout_marginBottom="@dimen/margin"/>
+
+        <TextView
+            android:id="@+id/bbContactTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/icon_phone"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/paddingHalf"
+            android:textColor="#000000"
+            android:textSize="@dimen/ETFont"
+            android:layout_marginBottom="@dimen/margin"/>
+        <TextView
+            android:id="@+id/bbEmailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/icon_email"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/paddingHalf"
+            android:textColor="#000000"
+            android:textSize="@dimen/ETFont"
+            android:layout_marginBottom="@dimen/margin"/>
+        <TextView
+            android:id="@+id/bbLocationTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/icon_address"
+            android:drawablePadding="@dimen/padding"
+            android:padding="@dimen/paddingHalf"
+            android:textColor="#000000"
+            android:textSize="@dimen/ETFont"
+            android:layout_marginBottom="@dimen/margin"/>
+    </LinearLayout>
+
+
+</LinearLayout>

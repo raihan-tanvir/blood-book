@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "301045484923",
+    "firebase_url": "https://bloodplus-ba37f.firebaseio.com",
+    "project_id": "bloodplus-ba37f",
+    "storage_bucket": "bloodplus-ba37f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301045484923:android:9647d081efe42293",
+        "android_client_info": {
+          "package_name": "com.example.raihan.blood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301045484923-e4916k58ammqnvderi98t83rdgf3rn3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raihan.blood",
+            "certificate_hash": "2f394b7ccf9a59d4ab1f699a640eb69d47645917"
+          }
+        },
+        {
+          "client_id": "301045484923-fm2d1j4qolni7ve95g9jb2dmvvgntkd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm_Q80MYACvAxY8toVJBEkcAWgScBDY3Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301045484923-fm2d1j4qolni7ve95g9jb2dmvvgntkd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

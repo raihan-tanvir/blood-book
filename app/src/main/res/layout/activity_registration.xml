@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/padding"
+    android:background="@drawable/bg2"
+    android:scrollbars="vertical"
+    tools:context=".RegistrationActivity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/paddingHalf"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/margin">
+
+                    <EditText
+                        android:id="@+id/regEmailET"
+                        android:layout_width="@dimen/ETSizeHorizontal"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/icon_email"
+                        android:drawablePadding="@dimen/padding"
+                        android:padding="@dimen/paddingHalf"
+                        android:inputType="textEmailAddress"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="@dimen/ETFont"
+                        android:hint="@string/eMailPrompt"
+                        android:layout_margin="@dimen/margin" />
+                    <EditText
+                        android:id="@+id/regpasswordET"
+                        android:layout_width="@dimen/ETSizeHorizontal"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/icon_lock"
+                        android:drawablePadding="@dimen/padding"
+                        android:padding="@dimen/paddingHalf"
+                        android:inputType="textPassword"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="@dimen/ETFont"
+                        android:hint="@string/passwordPrompt"/>
+                    <EditText
+                        android:id="@+id/confirmPasswordET"
+                        android:layout_width="@dimen/ETSizeHorizontal"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_lock"
+                        android:drawablePadding="@dimen/padding"
+                        android:background="@color/white"
+                        android:padding="@dimen/paddingHalf"
+                        android:inputType="textPassword"
+                        android:layout_margin="@dimen/margin"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/ETFont"
+                        android:hint="@string/confirmPasswrodPrompt"/>
+                    <Button
+                        android:id="@+id/signUpButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_sign_up1"
+                        android:layout_marginTop="@dimen/margin"
+                        android:onClick="onRegistrationButtonClick"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

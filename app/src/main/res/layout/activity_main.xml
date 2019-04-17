@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background_red_gradient"
+        >
+
+        <ImageView
+            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_logo"
+            android:background="@drawable/circle_shape"
+            android:layout_marginBottom="40dp"/>
+
+        <Button
+            android:id="@+id/homeLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_login"
+            android:onClick="onLoginButtonClick"
+            android:layout_marginBottom="@dimen/margin2x"/>
+
+        <Button
+            android:id="@+id/homeSignUPButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:background="@drawable/button_sign_up"
+            android:onClick="onSignUpButtonClick"
+            android:layout_marginBottom="@dimen/margin2x"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

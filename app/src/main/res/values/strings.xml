@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Blood+</string>
+
+    <string name="log_in_prompt">Sign in using your email &amp; password</string>
+    <string name="login_button_text">Sign In</string>
+    <string name="signup_prompt">Not yet registered?</string>
+    <string name="registration_button_text">Sign Up</string>
+    <string name="userAgreementText">By singing up you\'re registering yourself as a blood donor.Confirm to proceed.</string>
+    <string name="togglebutton">Male</string>
+
+    <string name="eMailPrompt">Enter Your Email Address</string>
+    <string name="passwordPrompt">Enter Password</string>
+    <string name="confirmPasswrodPrompt">Confirm Password</string>
+
+    <string name="chooseBloodPrompt">Choose your blood group</string>
+    <string-array name="bloodArray">
+        <item>Select Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+
+
+    <string name="title_activity_navigation_drawer_test">NavigationDrawerTest</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

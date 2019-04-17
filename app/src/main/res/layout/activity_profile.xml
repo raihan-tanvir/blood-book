@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background_red_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:paddingHorizontal="@dimen/padding"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/firstNameET"
+                android:layout_width="@dimen/ETSizeHorizontal"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_text"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:inputType="textPersonName"
+                android:hint="Enter First Name"
+                android:textColor="#000000"
+                android:textSize="@dimen/ETFont"
+                android:layout_marginBottom="@dimen/margin"/>
+
+            <EditText
+                android:id="@+id/lastNameET"
+                android:layout_width="@dimen/ETSizeHorizontal"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_text"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:inputType="textPersonName"
+                android:hint="Enter Last Name"
+                android:textColor="#000000"
+                android:textSize="@dimen/ETFont"
+                android:layout_below="@id/firstNameET"
+                android:layout_marginBottom="@dimen/margin"/>
+
+            <TextView
+                android:id="@+id/bloodGroupTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_shield"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ETFont"
+                android:layout_below="@id/lastNameET"
+                android:textAlignment="center"
+                android:layout_marginBottom="@dimen/margin"/>
+            <Spinner
+                android:id="@+id/bloodGroupSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:prompt="@string/chooseBloodPrompt"
+                android:entries="@array/bloodArray"
+                android:background="@color/white"
+                android:layout_below="@id/lastNameET"
+                android:layout_toRightOf="@id/bloodGroupTV"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginBottom="@dimen/margin"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/sexTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_gender"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:textAlignment="center"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ETFont"
+                android:layout_below="@+id/bloodGroupTV"
+                android:layout_marginBottom="@dimen/margin"/>
+
+            <RadioGroup
+                android:id="@+id/radioGenderGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_below="@id/bloodGroupSpinner"
+                android:layout_toRightOf="@+id/sexTV"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginBottom="@dimen/margin">
+
+                <RadioButton
+                    android:id="@+id/maleRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Male"/>
+                <RadioButton
+                    android:id="@+id/femaleRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Female"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/profilePhoneET"
+                android:layout_width="@dimen/ETSizeHorizontal"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:inputType="phone"
+                android:hint="Enter Phone Number"
+                android:textColor="#000000"
+                android:textSize="@dimen/ETFont"
+                android:layout_below="@+id/radioGenderGroup"
+                android:layout_marginBottom="@dimen/margin"/>
+
+            <EditText
+                android:id="@+id/districtET"
+                android:layout_width="@dimen/ETSizeHorizontal"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_address"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:inputType="textPostalAddress"
+                android:hint="Enter City "
+                android:textColor="#000000"
+                android:textSize="@dimen/ETFont"
+                android:layout_below="@+id/profilePhoneET"
+                android:layout_marginBottom="@dimen/margin"/>
+
+            <!--
+            <EditText
+                android:id="@+id/stationET"
+                android:layout_width="@dimen/ETSizeHorizontal"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_address"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:inputType="textPostalAddress"
+                android:hint="Enter Police Station Name"
+                android:textColor="#000000"
+                android:textSize="@dimen/ETFont"
+                android:layout_below="@+id/districtET"
+                android:layout_marginBottom="@dimen/margin"
+                android:visibility="visible"/>
+            -->
+            <EditText
+                android:id="@+id/addressET"
+                android:layout_width="@dimen/ETSizeHorizontal"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/icon_address"
+                android:drawablePadding="@dimen/padding"
+                android:padding="@dimen/paddingHalf"
+                android:inputType="textPostalAddress"
+                android:hint="Enter Area Adress"
+                android:textColor="#000000"
+                android:textSize="@dimen/ETFont"
+                android:layout_below="@+id/districtET"
+                android:layout_marginBottom="@dimen/margin"/>
+
+            <EditText
+                android:id="@+id/profilePasswordET"
+                android:layout_width="@dimen/ETSizeHorizontal"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/paddingHalf"
+                android:drawableLeft="@drawable/icon_lock"
+                android:drawablePadding="@dimen/padding"
+                android:inputType="textPassword"
+                android:hint="@string/passwordPrompt"
+                android:textColor="#000000"
+                android:layout_below="@+id/addressET"
+                android:layout_marginBottom="@dimen/margin"
+                android:textSize="@dimen/ETFont" />
+
+
+            <Button
+                android:id="@+id/profileUpdateButton"
+                android:layout_width="@dimen/bigButtonWidth"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:background="#94fd01"
+                android:text="Update"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/buttonFont"
+                android:onClick="onUpdateButtonClick"
+                android:layout_below="@+id/profilePasswordET" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

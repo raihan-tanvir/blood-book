@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_red_gradient"
+    android:paddingHorizontal="@dimen/padding2x"
+    android:scrollbars="vertical"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding2x">
+
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/app_logo"
+            android:background="@drawable/circle_shape"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="@dimen/margin2x" />
+
+        <EditText
+            android:id="@+id/loginEmailET"
+            android:layout_width="@dimen/ETSizeHorizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:drawableLeft="@drawable/icon_email"
+            android:drawablePadding="@dimen/padding"
+            android:background="@color/white"
+            android:padding="@dimen/paddingHalf"
+            android:inputType="textEmailAddress"
+            android:hint="@string/eMailPrompt"
+            android:textColor="#000000"
+            android:textSize="@dimen/ETFont" />
+
+
+        <EditText
+            android:id="@+id/loginPasswordET"
+            android:layout_width="@dimen/ETSizeHorizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="@dimen/padding"
+            android:background="@color/white"
+            android:padding="@dimen/paddingHalf"
+            android:inputType="textPassword"
+            android:hint="@string/passwordPrompt"
+            android:textColor="#000000"
+            android:textSize="@dimen/ETFont" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin">
+
+            <CheckBox
+                android:id="@+id/showPassCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="onCheckBoxClick"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginHalf"
+                android:text="Show Password"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_login"
+                android:layout_marginBottom="@dimen/margin2x"
+                android:onClick="onLoginButtonClick"/>
+
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchDonorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#03D50000"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:text="Search Donor"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin2x"
+                android:padding="@dimen/padding"
+                android:orientation="vertical"
+                android:gravity="left">
+
+                <TextView
+                    android:id="@+id/bgTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:padding="@dimen/paddingHalf"
+                    android:text="Blood Group :"
+                    android:textSize="@dimen/TVFont"
+                    android:textColor="@color/black" />
+                <!--
+                <EditText
+                    android:id="@+id/reqGrpTV"
+                    android:layout_width="80dp"
+                    android:background="@color/white"
+                    android:layout_height="32dp"
+                    android:padding="@dimen/paddingHalf"
+                    android:textSize="@dimen/TVFont"
+                    android:textColor="@color/black" />
+                    !-->
+                <Spinner
+                    android:id="@+id/searchBGSpinner"
+                    android:layout_width="@dimen/emailETSizeHorizontal"
+                    android:layout_height="32dp"
+                    android:entries="@array/bloodArray"
+                    android:layout_below="@+id/srchTV"
+                    android:prompt="@string/chooseBloodPrompt"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/distTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:padding="@dimen/paddingHalf"
+                    android:text="District :   "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/TVFont" />
+                <!-- Spinner Dropdown -->
+                <Spinner
+                    android:id="@+id/citySpinner"
+                    android:layout_width="@dimen/emailETSizeHorizontal"
+                    android:layout_height="wrap_content"
+                    />
+                <!--
+                <EditText
+                    android:id="@+id/searchDistET"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:inputType="textPostalAddress"
+                    android:background="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:hint="District"
+                    android:padding="@dimen/paddingHalf" />
+                -->
+            </LinearLayout>
+
+            <!--
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/padding"
+              android:gravity="center">
+              <TextView
+                  android:id="@+id/psTV"
+                  android:layout_width="wrap_content"
+                  android:layout_height="32dp"
+                  android:padding="@dimen/paddingHalf"
+                  android:text="Station :   "
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/TVFont" />
+
+              <EditText
+                  android:id="@+id/searchStationET"
+                  android:layout_width="165dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/margin"
+                  android:inputType="textPostalAddress"
+                  android:background="@color/white"
+                  android:layout_marginStart="20dp"
+                  android:hint="Police Station"
+                  android:padding="@dimen/paddingHalf" />
+          </LinearLayout>
+          -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/locTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:padding="@dimen/paddingHalf"
+                    android:text="Location :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/TVFont" />
+
+                <EditText
+                    android:id="@+id/searchLocationET"
+                    android:layout_width="@dimen/emailETSizeHorizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:inputType="textPostalAddress"
+                    android:background="@color/white"
+                    android:hint="Location"
+                    android:padding="@dimen/paddingHalf" />
+
+
+                <!--
+               <Spinner
+                    android:id="@+id/areaSpinner"
+                    android:layout_width="@dimen/emailETSizeHorizontal"
+                    android:layout_height="wrap_content"
+                    />
+                    -->
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/searchBloodButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:onClick="onSearchButtonClick"
+                android:layout_marginTop="20dp"
+                android:background="#94fd01"
+                android:text="Search"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/buttonFont"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

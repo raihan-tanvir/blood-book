@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonorAccountSetting">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding2x">
+
+                <TextView
+                    android:id="@+id/accStTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/marginHalf"
+                    android:padding="@dimen/padding"
+                    android:text="Change User Email &amp; Password"
+                    android:textColor="@color/black"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/accStEmailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accStTv"
+                    android:layout_marginVertical="@dimen/marginHalf"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/icon_email"
+                    android:drawablePadding="@dimen/padding"
+                    android:hint="@string/eMailPrompt"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/paddingHalf"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ETFont" />
+
+                <EditText
+                    android:id="@+id/accStPasswordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accStEmailET"
+                    android:layout_marginVertical="@dimen/marginHalf"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="@dimen/padding"
+                    android:hint="Enter your current password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/paddingHalf"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ETFont" />
+
+                <EditText
+                    android:id="@+id/accStNewPasswordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accStPasswordET"
+                    android:layout_marginVertical="@dimen/marginHalf"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="@dimen/padding"
+                    android:hint="Enter new password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/paddingHalf"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ETFont" />
+
+                <EditText
+                    android:id="@+id/accStConfirmPasswordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accStNewPasswordET"
+                    android:layout_marginVertical="@dimen/marginHalf"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/icon_lock"
+                    android:drawablePadding="@dimen/padding"
+                    android:hint="Enter new password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/paddingHalf"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/ETFont" />
+
+                <Button
+                    android:id="@+id/accStUpdateButton"
+                    android:layout_width="@dimen/bigButtonWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accStConfirmPasswordET"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="@dimen/marginHalf"
+                    android:background="#94fd01"
+                    android:onClick="onAccStUpdateButtonClick"
+                    android:text="Update"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/buttonFont" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding2x">
+
+                <TextView
+                    android:id="@+id/toggleDoantionTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/marginHalf"
+                    android:padding="@dimen/padding"
+                    android:text="Change Availabelity"
+                    android:textColor="@color/black"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/togglePRomptTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toggleDoantionTv"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:padding="@dimen/padding"
+                    android:text="Are You Currently Available to Donate Blood?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/TVFont" />
+
+                <Switch
+                    android:id="@+id/donationStatusSwitchBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/togglePRomptTV"
+                    android:onClick="onAccStSwitchButtonClick"
+                    android:text="Switch"
+                    android:showText="true"
+                    android:textOn="Yes !"
+                    android:textOff="No !"
+                    android:splitTrack="true"
+                    android:switchPadding="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/DeleteAccTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/marginHalf"
+                android:padding="@dimen/padding"
+                android:text="Remove Your User Account"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/deleteAccBtn"
+                android:layout_width="@dimen/bigButtonWidth"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DeleteAccTv"
+                android:text="Delete"
+                android:onClick="onAccStDeleteButtonClick"
+                android:background="@color/red"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
