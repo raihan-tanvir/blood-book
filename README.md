@@ -1,1 +1,2 @@
-# BloodBook_AUST_CSE_3224_ISD_Project
+# BloodBook - Blood Donor Finder Android Application
+## Course Project for CSE 2200 - Software Development-III, AUST
